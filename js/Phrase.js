@@ -14,6 +14,23 @@ class Phrase {
       `Bumblebee Tuna`,
     ];
   }
-  checkLetter() {}
-  showMatchedLetter() {}
+
+  checkLetter() {
+    const letters = document.querySelectorAll(`.letter`);
+    const letter = document.querySelectorAll(`.show`);
+    if (letters.length === letter.length) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  showMatchedLetter() {
+    const letter = document.querySelectorAll(`.letter`);
+    const show = document.querySelectorAll(`.show`);
+    if (letter.length === show.length) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
