@@ -15,4 +15,21 @@ class Game {
     const randomPhrase = this.phrases[randomNumber];
     return randomPhrase;
   }
+  removeLife() {
+    const TRIES = document.querySelectorAll(".tries img");
+    TRIES[this.missed].src = "images/lostHeart.png";
+    this.missed += 1;
+    if (this.missed === 5) {
+      this.gameOver(false);
+    }
+  }
+  gameOver(gameWon) {
+    const OVERLAY = document.querySelector("#overlay");
+    const GAMEOVERMESSAGE = document.querySelector("#game-over-message");
+    OVERLAY.style.display = "";
+    if (gameWon) {
+      OVERLAY.className = "win";
+      GAMEOVERMESSAGE.textContent = "You Lost!";
+    }
+  }
 }
