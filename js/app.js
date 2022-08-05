@@ -1,13 +1,15 @@
-//app.js to create a new instance of the `Game` class and add event listeners for the start button and onscreen keyboard buttons.
-const game = new Game();
-
-const startButton = document.querySelector(`#btn__reset`);
-startButton.addEventListener(`click`, () => {
+let game;
+const startButton = document.querySelector("#btn__reset");
+startButton.addEventListener("click", (e) => {
+  game = new Game();
+  game.resetGame();
   game.startGame();
 });
-const qwerty = document.querySelector(`#qwerty`);
-qwerty.addEventListener(`click`, (e) => {
-  if (e.target.tagName === `BUTTON`) {
+
+const button = document.querySelector("#qwerty");
+
+button.addEventListener("click", (e) => {
+  if (e.target.tagName === "BUTTON") {
     game.handleInteraction(e.target);
   }
 });
