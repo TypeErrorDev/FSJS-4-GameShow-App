@@ -32,4 +32,34 @@ class Game {
       GAMEOVERMESSAGE.textContent = "You Lost!";
     }
   }
+  handleInteraction(e) {
+    if (this.activePhrase.checkLetter(e.textContent) === false) {
+      e.classList.add("wrong");
+      this.removeLife();
+    } else if (this.activePhrase.checkLetter(e.textContent)) {
+      e.classList.add("chosen");
+      this.activePhrase.showMatchedLetter(e.textContent);
+      this.checkForWin();
+      if (this.checkForWin() === true) {
+        this.gameOver(true);
+      }
+      if (this.missed > 4) {
+        this.gameOver(false);
+      }
+    }
+    e.disabled = true;
+  }
+  resetGame(e) {
+    this.missed = 0;
+    let hearts = document.getElementsByClassName("tries");
+    for (let i = 0; i < hearts.length; i++) {
+      hearts[i].firstElementChild.src = "../images/liveHeart.png";
+    }
+    let buttons = document.getElementsByClassName("key");
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove("wrong");
+      buttons[i].classList.remove("chosen");
+      buttons[i].disabled = false;
+    }
+  }
 }
