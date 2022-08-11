@@ -60,8 +60,10 @@ class Game {
       this.removeLife();
     } else if (this.activePhrase.checkLetter(e.textContent)) {
       e.classList.add("chosen");
+      console.log("test1");
       this.activePhrase.showMatchedLetter(e.textContent);
       this.checkForWin();
+      console.log("test2");
       if (this.checkForWin() === true) {
         this.gameOver(true);
       }
@@ -76,6 +78,7 @@ class Game {
   resetGame(e) {
     this.missed = 0;
     let hearts = document.getElementsByClassName("tries");
+
     for (let i = 0; i < hearts.length; i++) {
       hearts[i].firstElementChild.src = "../images/liveHeart.png";
     }
@@ -85,5 +88,7 @@ class Game {
       buttons[i].classList.remove("chosen");
       buttons[i].disabled = false;
     }
+    let phrase = document.querySelector("#phrase ul");
+    phrase.innerHTML = "";
   }
 }

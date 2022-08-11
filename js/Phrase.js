@@ -35,7 +35,6 @@ class Phrase {
     const selectedPhrase = document.getElementById("phrase");
     const phraseDiv = selectedPhrase.firstElementChild;
     const letterList = phraseDiv.getElementsByTagName("li");
-
     for (let i = 0; i < letterList.length; i++) {
       if (letterList[i].textContent === letter) {
         letterList[i].className = `show letter ${letter}`;

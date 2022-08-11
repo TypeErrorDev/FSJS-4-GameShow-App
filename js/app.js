@@ -1,7 +1,7 @@
-// Event listener for the start game button to hide the start screen overlay
+// Event listener for the start game button
 let game;
-const startButton = document.querySelector("#btn__reset");
-startButton.addEventListener("click", (e) => {
+const startNewGame = document.querySelector("#btn__reset");
+startNewGame.addEventListener("click", (e) => {
   game = new Game();
   game.resetGame(e);
   game.startGame();
