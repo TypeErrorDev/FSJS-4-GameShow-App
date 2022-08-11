@@ -1,10 +1,8 @@
 # FSJS-4-GameShow-App
 
-  ## Description
+## Description
 
-This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
-## Table of contents
+This application is called the "Phrase Hunter". It is a game where the user tries to guess a phrase by selecting letters from an onscreen keyboard. The user has 5 chances to guess the phrase. If the user guesses the phrase before the 5 chances are up, the user wins. If the user does not guess the phrase before the 5 chances are up, the user loses. The user can also use the "Start Game" button to start a new game.## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
@@ -23,43 +21,31 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 
 ### The challenge
 
-Users should be able to:
+In this project, I've create a browser-based, word guessing game: "Phrase Hunter." I use JavaScript and OOP (Object-Oriented Programming) to select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard.
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Toggle color theme to their preference
+The game will choose a random phrase, split the phrase into letters, and put those letters onto the gameboard.
+
+Each time the player guesses a letter, the program compares the letter the player has chosen with the random phrase. If the letter is in the phrase, the gameboard displays the chosen letters on the screen.
+
+A player continues to select letters until they guess the phrase (and win), or make five incorrect guesses (and lose).
+
+If the player completes the phrase before they run out of guesses, a winning screen appears. If the player guesses incorrectly five times, a losing screen appears.
+
+A player can guess a letter only once. After they’ve guessed a letter, your programming will need to disable that letter on the onscreen keyboard.
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Testing Screenshot Caption](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Phrase Hunter hosted by Netlify](https://your-live-site-url.com)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Javascript](https://262.ecma-international.org/13.0/#sec-intro) - ES6
 
 ### What I learned
 
@@ -96,14 +82,10 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Portfolio - [www.MatthewPantel.com](https://www.matthewpantel.com)
+- LinkedIn - [@MatthewPantel](https://www.linkedin.com/in/MatthewPantel)
+- Twitter - [@TypeErrorDev](https://www.twitter.com/TypeErrorDev)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I'd like to give thanks to the Student Success Mentors with Team Treehouse, the other students in their Slack channel and my friends on Discord that helped me along the way. Without everyone's support, I'd still be figuring out how to use center a Div in CSS.
