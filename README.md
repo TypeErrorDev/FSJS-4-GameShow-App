@@ -2,7 +2,9 @@
 
 ## Description
 
-This application is called the "Phrase Hunter". It is a game where the user tries to guess a phrase by selecting letters from an onscreen keyboard. The user has 5 chances to guess the phrase. If the user guesses the phrase before the 5 chances are up, the user wins. If the user does not guess the phrase before the 5 chances are up, the user loses. The user can also use the "Start Game" button to start a new game.## Table of contents
+This application is called the "Phrase Hunter". It is a game where the user tries to guess a phrase by selecting letters from an onscreen keyboard. The user has 5 chances to guess the phrase. If the user guesses the phrase before the 5 chances are up, the user wins. If the user does not guess the phrase before the 5 chances are up, the user loses. The user can also use the "Start Game" button to start a new game.
+
+## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
