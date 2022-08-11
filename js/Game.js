@@ -54,43 +54,26 @@ class Game {
   }
 
   // this method controls most of the game logic. It checks to see if the button clicked by the player matches a letter in the phrase, and then directs the game based on a correct or incorrect guess.
+
   handleInteraction(e) {
-    const letter = e.textContent;
-    if (this.activePhrase.checkLetter(letter)) {
-      this.activePhrase.showMatchedLetter(letter);
-      e.disabled = true;
-      e.classList.add("chosen");
-      console.log("correct");
-      if (this.checkForWin()) {
-        this.gameOver(true);
-      }
-    } else {
-      e.disabled = true;
+    if (this.activePhrase.checkLetter(e.textContent) === false) {
       e.classList.add("wrong");
       this.removeLife();
       console.log("wrong");
+    } else if (this.activePhrase.checkLetter(e.textContent)) {
+      e.classList.add("chosen");
+      console.log("right");
+      this.activePhrase.showMatchedLetter(e.textContent);
+      this.checkForWin();
+      if (this.checkForWin() === true) {
+        this.gameOver(true);
+      }
+      if (this.missed > 4) {
+        this.gameOver(false);
+      }
     }
+    e.disabled = true;
   }
-
-  // handleInteraction(e) {
-  //   if (this.activePhrase.checkLetter(e.textContent) === false) {
-  //     e.classList.add("wrong");
-  //     this.removeLife();
-  //   } else if (this.activePhrase.checkLetter(e.textContent)) {
-  //     e.classList.add("chosen");
-  //     console.log("test1");
-  //     this.activePhrase.showMatchedLetter(e.textContent);
-  //     this.checkForWin();
-  //     console.log("test2");
-  //     if (this.checkForWin() === true) {
-  //       this.gameOver(true);
-  //     }
-  //     if (this.missed > 4) {
-  //       this.gameOver(false);
-  //     }
-  //   }
-  //   e.disabled = true;
-  // }
 
   // this method resets the game board, the missed guesses, and the heart images (i.e. the player's lives) at the start of each game.
   resetGame(e) {

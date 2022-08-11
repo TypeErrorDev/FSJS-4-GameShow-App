@@ -31,16 +31,14 @@ class Phrase {
   }
 
   // this method checks to see if the player has revealed all of the letters in the active phrase.
-  showMatchedLetter() {
-    const letter = document.querySelector("#qwerty button");
-    const phraseArray = this.phrase.split("");
-    phraseArray.forEach((letter) => {
-      if (letter === letter) {
-        li.classList.remove("hide");
-        li.classList.add("show");
-      } else {
-        return false;
+  showMatchedLetter(letter) {
+    const selectedPhrase = document.getElementById("phrase");
+    const childOfPhrase = selectedPhrase.firstElementChild;
+    const liLetters = childOfPhrase.getElementsByTagName("li");
+    for (let i = 0; i < liLetters.length; i++) {
+      if (liLetters[i].textContent === letter) {
+        liLetters[i].classList.replace("hide", "show");
       }
-    });
+    }
   }
 }
