@@ -8,7 +8,6 @@ This application is called the "Phrase Hunter". It is a game where the user trie
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -34,10 +33,6 @@ A player continues to select letters until they guess the phrase (and win), or m
 If the player completes the phrase before they run out of guesses, a winning screen appears. If the player guesses incorrectly five times, a losing screen appears.
 
 A player can guess a letter only once. After they’ve guessed a letter, the game will disable that letter on the onscreen keyboard.
-
-### Screenshot
-
-![Testing Screenshot Caption](./screenshot.png)
 
 ### Links
 
