@@ -14,7 +14,6 @@ This application is called the "Phrase Hunter". It is a game where the user trie
   - [Built with](#built-with)
   - [Style Updates](#style-updates)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -42,7 +41,7 @@ A player can guess a letter only once. After they’ve guessed a letter, the gam
 
 ### Links
 
-- Live Site URL: [Phrase Hunter hosted by Netlify](https://your-live-site-url.com)
+- Live Site URL: [Phrase Hunter hosted by Netlify](https://typeerrordev-phrasehunter.netlify.app/)
 
 ## My process
 
@@ -61,13 +60,6 @@ A player can guess a letter only once. After they’ve guessed a letter, the gam
 ### What I learned
 
 I learned a lot about OOP (Object-Oriented Programming) and how to use it to create a game. I also learned how to use the DOM to manipulate the HTML and CSS. I learned that by utilizing classes, I can create objects that can be used to create multiple instances of the same object.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
