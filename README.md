@@ -12,6 +12,7 @@ This application is called the "Phrase Hunter". It is a game where the user trie
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Style Updates](#style-updates)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -49,31 +50,17 @@ A player can guess a letter only once. After they’ve guessed a letter, the gam
 
 - [Javascript](https://262.ecma-international.org/13.0/#sec-intro) - ES6
 
+### Style Updates
+
+- I added some simple hover effects to the start button
+- I have added some simple customizations to the gameboard such as
+  - Added double borders to the letters
+  - Added text shadows to the header
+  - Hover animations for the qwerty keys
+
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I learned a lot about OOP (Object-Oriented Programming) and how to use it to create a game. I also learned how to use the DOM to manipulate the HTML and CSS. I learned that by utilizing classes, I can create objects that can be used to create multiple instances of the same object.
 
 ### Useful resources
 

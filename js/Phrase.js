@@ -20,9 +20,8 @@ class Phrase {
   }
 
   // this method checks to see if the letter selected by the player matches a letter in the phrase.
-  checkLetter() {
+  checkLetter(letter) {
     const phraseArray = this.phrase.split("");
-    const letter = document.querySelector("#qwerty button");
     if (phraseArray.includes(letter)) {
       return true;
     } else {

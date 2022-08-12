@@ -1,43 +1,43 @@
 Phrase Class
     Meets Expectations:
-        ☐ Includes constructor that receives a `phrase` parameter and initializes a `phrase` property set to the phrase @started(22-08-05 13:32)
-        ☐ Includes `addPhraseToDisplay()` method which adds the phrase to the gameboard @started(22-08-05 13:32)
-        ☐ Includes `checkLetter()` method which checks if a letter is in the phrase @started(22-08-05 13:32)
-        ☐ Includes `showMatchedLetter()` method which reveals the letter(s) on the board that matches the player's selection @started(22-08-05 13:32)
+        ✔ Includes constructor that receives a `phrase` parameter and initializes a `phrase` property set to the phrase @started(22-08-05 13:32) @done(22-08-12 09:09) @lasted(6d19h37m1s)
+        ✔ Includes `addPhraseToDisplay()` method which adds the phrase to the gameboard @started(22-08-05 13:32) @done(22-08-12 09:09) @lasted(6d19h37m5s)
+        ✔ Includes `checkLetter()` method which checks if a letter is in the phrase @started(22-08-05 13:32) @done(22-08-12 09:09) @lasted(6d19h37m8s)
+        ✔ Includes `showMatchedLetter()` method which reveals the letter(s) on the board that matches the player's selection @started(22-08-05 13:32) @done(22-08-12 09:09) @lasted(6d19h37m11s)
     
 Game Class Constructor
     Meets Expectations:
-        ☐ Includes a constructor that initializes a `missed` property set to `0`, a `phrase` property set to an array of five `Phrase` objects, and an `activePhrase` property set to `null` initially @started(22-08-05 13:32)
-        ☐ Phrases added to the game only include letters and spaces @started(22-08-05 13:32)
+        ✔ Includes a constructor that initializes a `missed` property set to `0`, a `phrase` property set to an array of five `Phrase` objects, and an `activePhrase` property set to `null` initially @started(22-08-05 13:32) @done(22-08-12 09:09) @lasted(6d19h37m15s)
+        ✔ Phrases added to the game only include letters and spaces @started(22-08-05 13:32) @done(22-08-12 09:09) @lasted(6d19h37m18s)
 
 Game Class Methods
     Meets Expectations:
-        ☐ Includes `startGame()` method that hides the start screen overlay, sets the `activePhrase` property to a random phrase, and calls the `addPhraseToDisplay()` method on the `activePhrase` property @started(22-08-05 13:32)
-        ☐ Includes `getRandomPhrase()` method that randomly retrieves one phrase from the `phrases` array @started(22-08-05 13:32)
+        ✔ Includes `startGame()` method that hides the start screen overlay, sets the `activePhrase` property to a random phrase, and calls the `addPhraseToDisplay()` method on the `activePhrase` property @started(22-08-05 13:32) @done(22-08-12 09:09) @lasted(6d19h37m36s)
+        ✔ Includes `getRandomPhrase()` method that randomly retrieves one phrase from the `phrases` array @started(22-08-05 13:32) @done(22-08-12 09:09) @lasted(6d19h37m40s)
         Includes `handleInteraction()` method that:
-            ☐ Disables the selected letter's onscreen keyboard button @started(22-08-05 13:32)
-            ☐ If the phrase does `not` include the guessed letter, the `.wrong` class is added to the selected letter's keyboard button and the `removeLife()` method is called @started(22-08-05 13:32)
-            ☐ If the phrase includes the guessed letter, the `.chosen` class is added to the selected letter's keyboard button, the `showMatchedLetter()` method is called on the phrase, and the `checkForWin()` method is called. If the player has won the game, the `gameOver()` method is called @started(22-08-05 13:32)
-        ☐ Includes a `removeLife()` method that checks if the player has revealed all of the letters in the active phrase @started(22-08-05 13:32)
-        ☐ Includes a `removeLife()` method that removes a life from the scoreboard (one of the `liveHeart.png` images is replaced with a `lostHeart.png` image), increments the `missed` property, and if the player has lost the game calls the `gameOver()` method @started(22-08-05 13:32)
-        ☐ Includes `gameOver()` method that displays a final "win" or "loss" message by showing lthe original start screen overlay styled with either the `win` or `loss` CSS Class @started(22-08-05 13:32)
+            ✔ Disables the selected letter's onscreen keyboard button @started(22-08-05 13:32) @done(22-08-12 09:09) @lasted(6d19h37m45s)
+            ✔ If the phrase does `not` include the guessed letter, the `.wrong` class is added to the selected letter's keyboard button and the `removeLife()` method is called @started(22-08-05 13:32) @done(22-08-12 09:09) @lasted(6d19h37m45s)
+            ✔ If the phrase includes the guessed letter, the `.chosen` class is added to the selected letter's keyboard button, the `showMatchedLetter()` method is called on the phrase, and the `checkForWin()` method is called. If the player has won the game, the `gameOver()` method is called @started(22-08-05 13:32) @done(22-08-12 09:09) @lasted(6d19h37m45s)
+        ✔ Includes a `removeLife()` method that checks if the player has revealed all of the letters in the active phrase @started(22-08-05 13:32) @done(22-08-12 09:09) @lasted(6d19h37m51s)
+        ✔ Includes a `removeLife()` method that removes a life from the scoreboard (one of the `liveHeart.png` images is replaced with a `lostHeart.png` image), increments the `missed` property, and if the player has lost the game calls the `gameOver()` method @started(22-08-05 13:32) @done(22-08-12 09:09) @lasted(6d19h37m53s)
+        ✔ Includes `gameOver()` method that displays a final "win" or "loss" message by showing lthe original start screen overlay styled with either the `win` or `loss` CSS Class @started(22-08-05 13:32) @done(22-08-12 09:09) @lasted(6d19h37m55s)
 
 app.js
     Meets Expectations:
-        ☐ Clicking the "Start Game" button creates a new `Game` object and starts the game @started(22-08-05 13:32)
-        ☐ Clicking an onscreen keyboard button results in a call to the `handleInteraction()` method for the clicked keyboard button @started(22-08-05 13:32)
-        ☐ Clicking the spaces between and around the onscreen keybaord buttons does not result in the `handleInteraction()` method being called @started(22-08-05 13:32)
+        ✔ Clicking the "Start Game" button creates a new `Game` object and starts the game @started(22-08-05 13:32) @done(22-08-12 09:10) @lasted(6d19h38m19s)
+        ✔ Clicking an onscreen keyboard button results in a call to the `handleInteraction()` method for the clicked keyboard button @started(22-08-05 13:32) @done(22-08-12 09:10) @lasted(6d19h38m21s)
+        ✔ Clicking the spaces between and around the onscreen keybaord buttons does not result in the `handleInteraction()` method being called @started(22-08-05 13:32) @done(22-08-12 09:10) @lasted(6d19h38m24s)
 
     Exceeds Expectations:
-        ☐ Event listener has been added for the `keydown` or `keyup` event so that pressing a physical keyboard button results in the `handleInteraction()` method being called for the associated onscreen keyboard button @started(22-08-05 13:32)
+        ✔ Event listener has been added for the `keydown` or `keyup` event so that pressing a physical keyboard button results in the `handleInteraction()` method being called for the associated onscreen keyboard button @started(22-08-05 13:32) @done(22-08-12 09:10) @lasted(6d19h38m37s)
 
 Resetting the Gameboard
     Meets Expectations:
-        ☐ After a game is completed, the gameboard is reset so that clicking the "Start Game" button loads a new game @started(22-08-05 13:32)
+        ✔ After a game is completed, the gameboard is reset so that clicking the "Start Game" button loads a new game @started(22-08-05 13:32) @done(22-08-12 09:10) @lasted(6d19h38m51s)
 
 HTML and CSS
     Meets Expectations:
-        ☐ Provided HTML and CSS is used @started(22-08-05 13:32)
+        ✔ Provided HTML and CSS is used @started(22-08-05 13:32) @done(22-08-12 09:10) @lasted(6d19h38m55s)
 
     Exceeds Expectations:
-        ☐ App styles have been personalized and changes have been noted in the `README.md` file and the project submission notes @started(22-08-05 13:32)
+        ✔ App styles have been personalized and changes have been noted in the `README.md` file and the project submission notes @started(22-08-05 13:32) @done(22-08-12 10:16) @lasted(6d20h44m10s)

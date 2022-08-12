@@ -28,8 +28,12 @@ class Game {
 
   // This method checks to see if the player has revealed all of the letters in the active phrase.
   checkForWin() {
-    const letter = document.querySelector(".hide");
-    letter.length === 0 ? true : false;
+    const letter = document.getElementsByClassName("hide");
+    if (letter.length === 0) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   // this method removes a life from the scoreboard, by replacing one of the liveHeart.png images with a lostHeart.png image (found in the images folder) and increments the missed property. If the player has five missed guesses (i.e they're out of lives), then end the game by calling the gameOver() method.
@@ -46,10 +50,16 @@ class Game {
   gameOver(gameWon) {
     const OVERLAY = document.querySelector("#overlay");
     const GAMEOVERMESSAGE = document.querySelector("#game-over-message");
+    const RESETBUTTON = document.querySelector("#btn__reset");
     OVERLAY.style.display = "";
     if (gameWon) {
       OVERLAY.className = "win";
+      GAMEOVERMESSAGE.textContent = "You Win!";
+      RESETBUTTON.textContent = "Play Again";
+    } else {
       GAMEOVERMESSAGE.textContent = "You Lost!";
+      OVERLAY.className = "lose";
+      RESETBUTTON.textContent = "Let's Play Again!";
     }
   }
 
